@@ -12,7 +12,7 @@ function App() {
   const [addToCart, setAddtocart]= useState([]);
 
   const handleAddtocartBtn =(food)=>{
-    console.log(`khabi naki ?`);
+    console.log(food);
   }
 
   return (

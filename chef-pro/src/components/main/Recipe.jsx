@@ -1,5 +1,6 @@
 import { GoClock } from "react-icons/go";
 import { FaFire } from "react-icons/fa";
+import PropTypes from "prop-types";
 
 const Recipe = ({ recipe, handleAddtocartBtn }) => {
   const {
@@ -8,7 +9,7 @@ const Recipe = ({ recipe, handleAddtocartBtn }) => {
     short_description,
     ingredients,
     preparing_time,
-    calories,
+    calories
   } = recipe;
   return (
     <div className="rounded-lg border border-[#282828] p-6">
@@ -41,7 +42,7 @@ const Recipe = ({ recipe, handleAddtocartBtn }) => {
         </div>
         <div className="card-actions">
           <button
-            onClick={handleAddtocartBtn}
+            onClick={()=> handleAddtocartBtn(recipe)}
             className="btn bg-[#0BE58A] font-semibold rounded-full"
           >
             Want to Cook
@@ -50,6 +51,11 @@ const Recipe = ({ recipe, handleAddtocartBtn }) => {
       </div>
     </div>
   );
+};
+
+Recipe.propTypes = {
+  recipe: PropTypes.object.isRequired,
+  handleAddtocartBtn: PropTypes.func,
 };
 
 export default Recipe;
