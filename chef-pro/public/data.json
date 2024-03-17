@@ -2,14 +2,14 @@
   {
     "recipe_image": "https://i.ibb.co/TghtTs0/ilya-mashkov-qxb-JUr9-Rq-I-unsplash.jpg",
     "recipe_id": 1,
-    "recipe_name": "Garlic Butter Shrimp Pasta",
+    "recipe_name": "Buffalo Chicken Burger",
     "short_description": "A delectable pasta dish with succulent shrimp, tossed in a creamy garlic butter sauce.",
     "ingredients": [
-      "350g shrimp",
-      "250g pasta",
-      "4 cloves garlic",
-      "1/4 cup butter",
-      "1/2 cup heavy cream"
+      "350g Ground Chicken",
+      "Buffalo Sauce",
+      "Blue Cheese",
+      "Burger Buns",
+      "Lettuce and Tomato"
     ],
     "preparing_time": "25 min",
     "calories": "420 calories"
@@ -17,19 +17,19 @@
   {
     "recipe_image": "https://i.ibb.co/4sn7jq0/pixzolo-photography-ae-ESmm-FKH0-M-unsplash.jpg",
     "recipe_id": 2,
-    "recipe_name": "Caprese Salad",
+    "recipe_name": "Lemon Garlic Parmesan Pasta",
     "short_description": "A refreshing salad featuring ripe tomatoes, fresh mozzarella, basil, and balsamic glaze.",
     "ingredients": [
-      "2 large tomatoes",
-      "200g fresh mozzarella",
-      "1 cup basil leaves",
-      "2 tbsp balsamic glaze"
+      "Pasta (such as spaghetti, fettuccine, or linguine)",
+      "Garlic",
+      "Lemon (both zest and juice)",
+      "Parmesan cheese"
     ],
     "preparing_time": "10 min",
     "calories": "180 calories"
   },
   {
-    "recipe_image": "https://i.ibb.co/z23TRqN/orijit-chatterjee-w-EBg-p-Ytynw-unsplash.jpg",
+    "recipe_image": "https://s3-alpha-sig.figma.com/img/4c9c/4907/5cdba92e95d1813e3a14122be673189a?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QVE~y4ASVupV3iHo0kG0IL2gSx6~OfrG7JJNsnk6AiTrNcY0GLrZ3CAk69I9t4MdBlb8NvdaFoEs5mwpkz43g2MG64nwNfXdWMJwu7rUBDDdjd19x6kSiaJ1jaIUHA7XaypNhWi5ZrLe-3KG1q-bGT2SockYGvOMqmndVbJtia7fZtMK6O5iD5ztFLI6H92d6GtGTOGqj0vBOEt-tNEsJfjoZQ3u6SMfbC3Qjdj6bu681fbWJXP13p~ziv-NoPFxm5EXFD~OmUPbplfHrleN0Knoj3O8HlWmxew8pL7n1MfmcDSkKwAWCvCnR~QGaEz~8cr-uWsqkrbAP2eX1ANsjg__",
     "recipe_id": 3,
     "recipe_name": "Vegetable Stir-Fry",
     "short_description": "A colorful stir-fry loaded with crunchy vegetables, tofu, and a savory soy sauce.",
@@ -58,7 +58,7 @@
     "calories": "350 calories"
   },
   {
-    "recipe_image": "https://i.ibb.co/9Tt5qDC/farhad-ibrahimzade-Kp-Ol9j-V2a-JM-unsplash.jpg",
+    "recipe_image": "https://s3-alpha-sig.figma.com/img/728d/7565/fe29593b9f62c1def025edfb2345fe84?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iDFp~bCFKFoZj-kryhabuu3WhnihuZuLlFJvNqldLK2XSMcAGi3z9UvlAqF1VK3sXwasS5QG5raZSFrfzzJkWGK~dRUhJxlYIc3feQIyZlp3subQhsTh15pG~~M3D3hAUHv5nvAM-Tjmd1rKvVLysyThUcSjCOgTNJvNI~ylf5SFq8-pTi0jTy--5yTuUPoJ2sDUGWNEvnq6nHGAFjbcbsnLbsHFVuDgrLlpb15r8LdCNhQfpIFj4j9McizHS2btgH9NHdQnYJvmjrQLFsxxq7hyK7RK2GzaE9tKeHPOVNRq9-KVPEa8Cu91Wiymz7u1BPzDqMORwjaiKQYjfr5q-w__",
     "recipe_id": 5,
     "recipe_name": "Mushroom Risotto",
     "short_description": "A creamy risotto infused with earthy mushrooms and aromatic herbs, a comforting Italian classic.",
@@ -75,14 +75,14 @@
   {
     "recipe_image": "https://i.ibb.co/Vgd1VWh/lucas-andrade-3-Uj0-Gw-Vm-Oe-Y-unsplash.jpg",
     "recipe_id": 6,
-    "recipe_name": "Chocolate Lava Cake",
+    "recipe_name": "Lemon Herb Roast Chicken",
     "short_description": "Indulge in a decadent chocolate lava cake, with a molten center that melts in your mouth.",
     "ingredients": [
-      "100g dark chocolate",
-      "1/2 cup butter",
-      "2 eggs",
-      "1/4 cup sugar",
-      "2 tbsp flour"
+      "Whole chicken",
+      "Lemons (both zest and juice)",
+      "Garlic",
+      "1/4 cup Olive oil",
+      "Salt and black pepper"
     ],
     "preparing_time": "30 min",
     "calories": "280 calories"

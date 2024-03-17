@@ -12,7 +12,7 @@ const Recipe = ({ recipe, handleAddtocartBtn }) => {
     calories
   } = recipe;
   return (
-    <div className="rounded-lg border border-[#282828] p-6">
+    <div className="rounded-lg border border-[#28282833] p-6">
       <figure className="">
         <img src={recipe_image} alt="Foods" className="rounded-xl" />
       </figure>
@@ -24,7 +24,9 @@ const Recipe = ({ recipe, handleAddtocartBtn }) => {
           <h3>Ingredients: {ingredients.length}</h3>
           <ul className="mt-1 mb-4">
             {ingredients.map((ing, i) => (
-              <li key={i} className="mb-1 text-[#878787]">{ing}</li>
+              <li key={i} className="mb-1 text-[#878787]">
+                {ing}
+              </li>
             ))}
           </ul>
         </div>
@@ -42,7 +44,7 @@ const Recipe = ({ recipe, handleAddtocartBtn }) => {
         </div>
         <div className="card-actions">
           <button
-            onClick={()=> handleAddtocartBtn(recipe)}
+            onClick={() => handleAddtocartBtn(recipe)}
             className="btn bg-[#0BE58A] font-semibold rounded-full"
           >
             Want to Cook
