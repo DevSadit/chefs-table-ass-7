@@ -16,6 +16,7 @@ function App() {
    }
 
   const [addToCart, setAddtocart]= useState([]);
+  const [addtocc, setAddtocc]= useState([]);
 
   const handleAddtocartBtn =(food)=>{
      
@@ -27,6 +28,12 @@ function App() {
     } 
   }
 
+  const handlePreparingBtn =(card)=>{
+    const newAddtocc = [...addtocc, card];
+    setAddtocc(newAddtocc);
+  }
+
+
   return (
     <div>
       <header className="mx-auto container">
@@ -37,7 +44,11 @@ function App() {
         <Our></Our>
         <div className="flex gap-x-6 ">
           <Recipes handleAddtocartBtn={handleAddtocartBtn}></Recipes>
-          <SideBar addToCart={addToCart}></SideBar>
+          <SideBar
+            addToCart={addToCart}
+            handlePreparingBtn={handlePreparingBtn}
+            addtocc={addtocc}
+          ></SideBar>
         </div>
       </main>
       <ToastContainer />
@@ -46,3 +57,4 @@ function App() {
 }
 
 export default App
+//             handlePreparingBtn={handlePreparingBtn}
