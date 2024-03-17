@@ -1,7 +1,7 @@
 import { GoClock } from "react-icons/go";
 import { FaFire } from "react-icons/fa";
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleAddtocartBtn }) => {
   const {
     recipe_image,
     recipe_name,
@@ -20,9 +20,11 @@ const Recipe = ({ recipe }) => {
         <p className="my-4 text-[#878787]">{short_description}</p>
         <hr />
         <div className="mt-6">
-          <h3>Ingredients:</h3>
-          <ul>
-            <li></li>
+          <h3>Ingredients: {ingredients.length}</h3>
+          <ul className="mt-1 mb-4">
+            {ingredients.map((ing) => (
+              <li className="mb-1 text-[#878787]">{ing}</li>
+            ))}
           </ul>
         </div>
         <hr className="text-[#2828281A]" />
@@ -38,7 +40,10 @@ const Recipe = ({ recipe }) => {
           </div>
         </div>
         <div className="card-actions">
-          <button className="btn bg-[#0BE58A] font-semibold rounded-full">
+          <button
+            onClick={handleAddtocartBtn}
+            className="btn bg-[#0BE58A] font-semibold rounded-full"
+          >
             Want to Cook
           </button>
         </div>

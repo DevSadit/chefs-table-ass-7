@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import './App.css'
 import Banner from './components/header/Banner'
 import Navbar from './components/header/Navbar'
@@ -8,6 +9,12 @@ import SideBar from './components/main/SideBar';
 
 function App() {
 
+  const [addToCart, setAddtocart]= useState([]);
+
+  const handleAddtocartBtn =(food)=>{
+    console.log(`khabi naki ?`);
+  }
+
   return (
     <div>
       <header className="mx-auto container">
@@ -16,9 +23,9 @@ function App() {
       </header>
       <main className="mx-auto container">
         <Our></Our>
-        <div className='flex'>
-          <Recipes></Recipes>
-          <SideBar></SideBar>
+        <div className="flex gap-x-6 ">
+            <Recipes handleAddtocartBtn={handleAddtocartBtn}></Recipes>
+            <SideBar></SideBar>
         </div>
       </main>
     </div>

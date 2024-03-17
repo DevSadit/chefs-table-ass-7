@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Recipe from "./Recipe";
 
-const Recipes = () => {
+const Recipes = ({ handleAddtocartBtn }) => {
   const [recepies, setRecepies] = useState([]);
   useEffect(() => {
     fetch(`data.json`)
@@ -9,10 +9,13 @@ const Recipes = () => {
       .then((data) => setRecepies(data));
   }, []);
   return (
-    <div className="w-2/3 border border-red-500">
-      <h1>{recepies.length}</h1>
+    <div className="grid grid-cols-2 gap-6">
       {recepies.map((recipe) => (
-        <Recipe key={recipe.recipe_id} recipe={recipe}></Recipe>
+        <Recipe
+          key={recipe.recipe_id}
+          recipe={recipe}
+          handleAddtocartBtn={handleAddtocartBtn}
+        ></Recipe>
       ))}
     </div>
   );
