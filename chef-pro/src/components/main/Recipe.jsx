@@ -23,8 +23,8 @@ const Recipe = ({ recipe, handleAddtocartBtn }) => {
         <div className="mt-6">
           <h3>Ingredients: {ingredients.length}</h3>
           <ul className="mt-1 mb-4">
-            {ingredients.map((ing) => (
-              <li className="mb-1 text-[#878787]">{ing}</li>
+            {ingredients.map((ing, i) => (
+              <li key={i} className="mb-1 text-[#878787]">{ing}</li>
             ))}
           </ul>
         </div>

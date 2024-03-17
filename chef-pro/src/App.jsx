@@ -12,7 +12,8 @@ function App() {
   const [addToCart, setAddtocart]= useState([]);
 
   const handleAddtocartBtn =(food)=>{
-    console.log(food);
+    const newAddToCart = [...addToCart, food];
+    setAddtocart(newAddToCart)
   }
 
   return (
@@ -24,8 +25,9 @@ function App() {
       <main className="mx-auto container">
         <Our></Our>
         <div className="flex gap-x-6 ">
-            <Recipes handleAddtocartBtn={handleAddtocartBtn}></Recipes>
-            <SideBar></SideBar>
+          <Recipes handleAddtocartBtn={handleAddtocartBtn}></Recipes>
+          <SideBar addToCart={addToCart}
+          ></SideBar>
         </div>
       </main>
     </div>
