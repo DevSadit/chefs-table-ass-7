@@ -4,11 +4,11 @@ import Sidebarcard from "./Sidebarcard";
 const SideBar = ({ addToCart }) => {
   return (
     <div className="h-screen w-1/3 border border-[#28282833] text-center rounded-lg">
-      <div className="mt-8 px-8">
-        <h1 className="font-semibold text-2xl mb-4">
+      <div className="mt-8 mx-16">
+        <h1 className="font-semibold text-2xl mb-4 mt-8 ">
           Want to cook: {addToCart.length}
         </h1>
-        <hr />
+        <hr className="mx-40" />
         <table className="table mb-4">
           <tr>
             <td>Name</td>
@@ -17,8 +17,12 @@ const SideBar = ({ addToCart }) => {
           </tr>
         </table>
       </div>
-      {addToCart.map((miniCard) => (
-        <Sidebarcard key={miniCard.recipe_id} miniCard={miniCard}></Sidebarcard>
+      {addToCart.map((miniCard, i) => (
+        <Sidebarcard
+          key={miniCard.recipe_id}
+          miniCard={miniCard}
+          i={i}
+        ></Sidebarcard>
       ))}
       <div className="mt-8 mx-16">
         <h1 className="font-semibold text-2xl mb-4">Currently cooking: </h1>

@@ -12,8 +12,14 @@ function App() {
   const [addToCart, setAddtocart]= useState([]);
 
   const handleAddtocartBtn =(food)=>{
-    const newAddToCart = [...addToCart, food];
-    setAddtocart(newAddToCart)
+    // const newAddToCart = [...addToCart, food];
+    // setAddtocart(newAddToCart)
+    const isExist = addToCart.find((item) => item.recipe_id===food.recipe_id);
+    if(!isExist){
+      setAddtocart([...addToCart, food]);
+    } else {
+      alert("already exist")
+    }
   }
 
   return (

@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
 
-const Sidebarcard = ({miniCard}) => {
-    const { recipe_name, preparing_time, calories } = miniCard;
+const Sidebarcard = ({ miniCard, i }) => {
+  const { recipe_name, preparing_time, calories } = miniCard;
   return (
     <div>
       <table className="table mb-2 rounded-lg">
         <tr className="bg-base-200">
+          <td>{i+1}</td>
           <td>{recipe_name}</td>
           <td>{preparing_time}</td>
           <td>{calories}</td>
@@ -23,5 +24,6 @@ const Sidebarcard = ({miniCard}) => {
 
 Sidebarcard.propTypes ={
     miniCard: PropTypes.object,
+    i: PropTypes.number,
 }
 export default Sidebarcard;
