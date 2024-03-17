@@ -11,7 +11,7 @@ const Sidebarcard = ({ miniCard, i }) => {
           <td>{preparing_time}</td>
           <td>{calories}</td>
           <td>
-            <button className=" bg-[#0BE58A] font-semibold rounded-full px-4 py-2">
+            <button className=" bg-[#0BE58A] font-semibold rounded-lg px-4 py-2">
               Preparing
             </button>
           </td>

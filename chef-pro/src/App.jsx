@@ -7,19 +7,24 @@ import Our from './components/main/Our';
 import Recipes from './components/main/Recipes';
 import SideBar from './components/main/SideBar';
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
+
+   const handleToast =()=>{
+    toast(`Already Exist`);
+   }
 
   const [addToCart, setAddtocart]= useState([]);
 
   const handleAddtocartBtn =(food)=>{
-    // const newAddToCart = [...addToCart, food];
-    // setAddtocart(newAddToCart)
+     
     const isExist = addToCart.find((item) => item.recipe_id===food.recipe_id);
     if(!isExist){
       setAddtocart([...addToCart, food]);
     } else {
-      alert("already exist")
-    }
+      handleToast();
+    } 
   }
 
   return (
@@ -32,10 +37,10 @@ function App() {
         <Our></Our>
         <div className="flex gap-x-6 ">
           <Recipes handleAddtocartBtn={handleAddtocartBtn}></Recipes>
-          <SideBar addToCart={addToCart}
-          ></SideBar>
+          <SideBar addToCart={addToCart}></SideBar>
         </div>
       </main>
+      <ToastContainer />
     </div>
   );
 }
