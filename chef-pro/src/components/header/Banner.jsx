@@ -1,7 +1,7 @@
 const Banner = () => {
   return (
     <div
-      className="hero "
+      className="hero rounded-xl"
       style={{
         backgroundImage: `url(https://s3-alpha-sig.figma.com/img/2b8f/f4be/d57b5fb5ad84c9f6a9b1eb9782e9b11b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bL~VLdsv-hRuXW~LIvEdTJne2vh1Xx0I33l~ndKRnQxhJymvKrRGAQEFj6iMi9FKXYy9o~JO5tu7XLBaZFPOH4LqdB1ePmBMeVtBNrYLyHB9~tf-aR3ia965uDSadF8m9QECrpx5TnhX8FdpUEJK92nCiDnMD3qy4lc3GT8VZPqyjoSswP6pCW-3xicITpf8wMaczVaq21kbMm970QukhImhycQ6E1BO9yVxh~vqHAWU9ktR5r5JO0tZR35aCGjHhASku9FbOXKdua1Dr2f2fU1yvc6bpsvSBuAb7eW0xUG8Nh0g9HaMoRoyKbhbq~4~Nm9nUEObIm~wIKpDZdh4YA__)`,
         backgroundSize: "cover",
@@ -10,7 +10,7 @@ const Banner = () => {
         minHeight: "600px",
       }}
     >
-      <div className="hero-overlay bg-opacity-30"></div>
+      <div className="hero-overlay bg-opacity-30 rounded-xl"></div>
       <div className="text-center text-neutral-content">
         <div className="px-44 ">
           <h1 className="text-5xl font-bold mb-7">

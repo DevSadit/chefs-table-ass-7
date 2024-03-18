@@ -31,6 +31,10 @@ function App() {
   const handlePreparingBtn =(card)=>{
     const newAddtocc = [...addtocc, card];
     setAddtocc(newAddtocc);
+    const newAddToCart = addToCart.filter(
+      (item) => item.recipe_id != card.recipe_id
+    );
+    setAddtocart(newAddToCart)
   }
 
 

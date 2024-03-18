@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 const Sidecccard = ({ addtocc }) => {
+  console.log(addtocc);
   const { recipe_name, preparing_time, calories } = addtocc;
   return (
     <div>

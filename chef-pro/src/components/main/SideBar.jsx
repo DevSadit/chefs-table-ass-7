@@ -27,7 +27,9 @@ const SideBar = ({ addToCart, handlePreparingBtn, addtocc }) => {
         ></Sidebarcard>
       ))}
       <div className="mt-8 mx-16">
-        <h1 className="font-semibold text-2xl mb-4">Currently cooking:</h1>
+        <h1 className="font-semibold text-2xl mb-4">
+          Currently cooking: {addtocc.length}
+        </h1>
         <hr />
         <table className="table mb-4">
           <tr>
@@ -36,8 +38,12 @@ const SideBar = ({ addToCart, handlePreparingBtn, addtocc }) => {
             <td>Calories</td>
           </tr>
         </table>
-        <Sidecccard addtocc={addtocc}></Sidecccard>
       </div>
+
+      {/* currently cooking section cards */}
+      {addtocc.map((addtocc) => (
+        <Sidecccard key={addtocc.recipe_id} addtocc={addtocc}></Sidecccard>
+      ))}
     </div>
   );
 };
